@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact CyberTech Solutions - Get in touch for your next technology project">
+    <meta name="keywords" content="contact, tech consulting, project inquiry, technology solutions">
+    <meta name="author" content="CyberTech Solutions">
+    <title>Contact Us | CyberTech Solutions</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn" aria-label="Toggle theme">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">CyberTech</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">home</a>
+                <a href="about.html" class="nav-link">about</a>
+                <a href="services.html" class="nav-link">services</a>
+                <a href="projects.html" class="nav-link">projects</a>
+                <a href="testimonials.html" class="nav-link">testimonials</a>
+                <a href="contact.html" class="nav-link active">contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title">
+                        <span class="terminal-prompt">#</span> Contact Us
+                    </h1>
+                    <p class="page-subtitle">
+                        Ready to transform your business with cutting-edge technology?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper" data-aos="fade-right">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <span class="terminal-prompt">$></span> Get In Touch
+                            </h2>
+                            <p class="section-subtitle">
+                                Tell us about your project and we'll get back to you within 24 hours
+                            </p>
+                        </div>
+
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                    <span class="error-message" id="firstName-error"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                    <span class="error-message" id="lastName-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                                <span class="error-message" id="phone-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service">Service Interested In *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="cybersecurity">Cybersecurity</option>
+                                    <option value="ai-solutions">AI & Machine Learning</option>
+                                    <option value="blockchain">Blockchain Solutions</option>
+                                    <option value="cloud-solutions">Cloud Solutions</option>
+                                    <option value="mobile-development">Mobile Development</option>
+                                    <option value="consulting">Technology Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error-message" id="service-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Project Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-10k">Under $10,000</option>
+                                    <option value="10k-25k">$10,000 - $25,000</option>
+                                    <option value="25k-50k">$25,000 - $50,000</option>
+                                    <option value="50k-100k">$50,000 - $100,000</option>
+                                    <option value="over-100k">Over $100,000</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timeline">Project Timeline</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">ASAP</option>
+                                    <option value="1-month">Within 1 month</option>
+                                    <option value="3-months">Within 3 months</option>
+                                    <option value="6-months">Within 6 months</option>
+                                    <option value="planning">Just planning</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Project Details *</label>
+                                <textarea id="message" name="message" rows="5" 
+                                    placeholder="Tell us about your project, goals, and any specific requirements..." required></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for tech insights and updates
+                                </label>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="#" target="_blank">Privacy Policy</a> and 
+                                    <a href="#" target="_blank">Terms of Service</a> *
+                                </label>
+                                <span class="error-message" id="privacy-error"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-arrow">→</span>
+                                <div class="btn-loading">
+                                    <div class="loading-spinner"></div>
+                                </div>
+                            </button>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div id="success-message" class="success-message" style="display: none;">
+                            <div class="success-icon">✓</div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info-wrapper" data-aos="fade-left">
+                        <div class="contact-info-card">
+                            <h3>Let's Build Something Amazing Together</h3>
+                            <p>
+                                Whether you need a complete digital transformation or just want to enhance 
+                                your existing systems, we're here to help. Our team of experts is ready 
+                                to discuss your project and provide tailored solutions.
+                            </p>
+
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <div class="method-icon">📧</div>
+                                    <div class="method-info">
+                                        <h4>Email Us</h4>
+                                        <p>hello@cybertech.dev</p>
+                                        <small>We respond within 24 hours</small>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method">
+                                    <div class="method-icon">📞</div>
+                                    <div class="method-info">
+                                        <h4>Call Us</h4>
+                                        <p>+1 (555) 123-4567</p>
+                                        <small>Mon-Fri, 9AM-6PM PST</small>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method">
+                                    <div class="method-icon">📍</div>
+                                    <div class="method-info">
+                                        <h4>Visit Us</h4>
+                                        <p>123 Innovation Drive<br>San Francisco, CA 94105</p>
+                                        <small>By appointment only</small>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method">
+                                    <div class="method-icon">💬</div>
+                                    <div class="method-info">
+                                        <h4>Live Chat</h4>
+                                        <p>Available on our website</p>
+                                        <small>24/7 support</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="social-contact">
+                                <h4>Follow Us</h4>
+                                <div class="social-links">
+                                    <a href="#" aria-label="GitHub">
+                                        <span>📁</span>
+                                        <span>GitHub</span>
+                                    </a>
+                                    <a href="#" aria-label="LinkedIn">
+                                        <span>💼</span>
+                                        <span>LinkedIn</span>
+                                    </a>
+                                    <a href="#" aria-label="Twitter">
+                                        <span>🐦</span>
+                                        <span>Twitter</span>
+                                    </a>
+                                    <a href="#" aria-label="Discord">
+                                        <span>💬</span>
+                                        <span>Discord</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section" id="map-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="terminal-prompt">#</span> Our Location
+                    </h2>
+                    <p class="section-subtitle">
+                        Visit our headquarters in the heart of San Francisco
+                    </p>
+                </div>
+
+                <div class="map-container" data-aos="fade-up">
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <div class="map-icon">🗺️</div>
+                            <h3>Interactive Map</h3>
+                            <p>123 Innovation Drive, San Francisco, CA 94105</p>
+                            <div class="map-actions">
+                                <button class="map-btn" onclick="openMapModal()">
+                                    <span>🔍</span> View Larger Map
+                                </button>
+                                <a href="https://maps.google.com" target="_blank" class="map-btn">
+                                    <span>📍</span> Get Directions
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Simulated map overlay -->
+                        <div class="map-overlay">
+                            <div class="map-grid">
+                                <div class="grid-line"></div>
+                                <div class="grid-line"></div>
+                                <div class="grid-line"></div>
+                                <div class="grid-line"></div>
+                            </div>
+                            <div class="location-marker">
+                                <div class="marker-pulse"></div>
+                                <div class="marker-pin">📍</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="location-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">🏢</span>
+                            <div class="detail-text">
+                                <h4>Office Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                   Saturday: 10:00 AM - 4:00 PM<br>
+                                   Sunday: Closed</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <span class="detail-icon">🚗</span>
+                            <div class="detail-text">
+                                <h4>Parking</h4>
+                                <p>Free visitor parking available<br>
+                                   Electric vehicle charging stations<br>
+                                   Bicycle parking and storage</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <span class="detail-icon">🚇</span>
+                            <div class="detail-text">
+                                <h4>Public Transit</h4>
+                                <p>2 blocks from Montgomery Station<br>
+                                   Multiple bus lines nearby<br>
+                                   Walking distance from Ferry Building</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="terminal-prompt">#</span> Frequently Asked Questions
+                    </h2>
+                    <p class="section-subtitle">
+                        Quick answers to common questions about our services
+                    </p>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h4>How long does a typical project take?</h4>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Project timelines vary based on complexity and scope. Simple websites typically take 4-6 weeks, while complex applications can take 3-6 months. We provide detailed timelines during our initial consultation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h4>Do you provide ongoing support and maintenance?</h4>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We offer comprehensive support and maintenance packages. This includes security updates, performance monitoring, bug fixes, and feature enhancements to keep your systems running smoothly.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h4>What's your development process like?</h4>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We follow an agile methodology with regular sprints and client check-ins. Our process includes discovery, design, development, testing, and deployment phases with continuous communication throughout.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h4>Can you work with our existing team?</h4>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! We can integrate with your existing development team, provide consulting services, or handle specific components of larger projects. We're flexible and adapt to your workflow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Map Modal -->
+    <div id="map-modal" class="modal">
+        <div class="modal-content map-modal-content">
+            <div class="modal-header">
+                <h3>CyberTech Solutions Location</h3>
+                <button class="modal-close" onclick="closeMapModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="large-map-placeholder">
+                    <div class="map-info">
+                        <h4>123 Innovation Drive</h4>
+                        <p>San Francisco, CA 94105</p>
+                        <div class="map-actions">
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-primary">
+                                <span>Get Directions</span>
+                                <span class="btn-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-bracket">[</span>
+                        <span class="logo-text">CyberTech</span>
+                        <span class="logo-bracket">]</span>
+                    </div>
+                    <p class="footer-description">
+                        Innovating the future through cutting-edge technology solutions.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><span>📁</span></a>
+                        <a href="#" aria-label="LinkedIn"><span>💼</span></a>
+                        <a href="#" aria-label="Twitter"><span>🐦</span></a>
+                        <a href="#" aria-label="Discord"><span>💬</span></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#web-dev">Web Development</a></li>
+                        <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+                        <li><a href="services.html#ai">AI Solutions</a></li>
+                        <li><a href="services.html#blockchain">Blockchain</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📧 hello@cybertech.dev</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>📍 San Francisco, CA</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-separator"></div>
+                <p>&copy; 2024 CyberTech Solutions. All rights reserved.</p>
+                <p class="footer-tagline">
+                    <span class="terminal-prompt">$></span> 
+                    Built with ❤️ and ☕ by the CyberTech team
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

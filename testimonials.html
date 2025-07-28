@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CyberTech Solutions Testimonials - Read what our clients say about our technology solutions">
+    <meta name="keywords" content="testimonials, reviews, client feedback, success stories">
+    <meta name="author" content="CyberTech Solutions">
+    <title>Testimonials | CyberTech Solutions</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn" aria-label="Toggle theme">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">CyberTech</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">home</a>
+                <a href="about.html" class="nav-link">about</a>
+                <a href="services.html" class="nav-link">services</a>
+                <a href="projects.html" class="nav-link">projects</a>
+                <a href="testimonials.html" class="nav-link active">testimonials</a>
+                <a href="contact.html" class="nav-link">contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title">
+                        <span class="terminal-prompt">#</span> Testimonials
+                    </h1>
+                    <p class="page-subtitle">
+                        What our clients say about working with CyberTech Solutions
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Testimonial Slider -->
+        <section class="testimonial-slider" id="testimonial-slider">
+            <div class="container">
+                <div class="slider-wrapper">
+                    <div class="testimonial-slides">
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide active" data-slide="1">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">💬</div>
+                                <blockquote>
+                                    "CyberTech Solutions transformed our entire digital infrastructure. 
+                                    Their AI-powered recommendations system increased our sales by 300% 
+                                    within the first quarter. The team's expertise and attention to detail 
+                                    is unmatched in the industry."
+                                </blockquote>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">👨‍💼</div>
+                                    <div class="author-info">
+                                        <h4>Michael Chen</h4>
+                                        <p>CEO, TechStart Inc.</p>
+                                        <div class="rating">
+                                            <span>⭐⭐⭐⭐⭐</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide" data-slide="2">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">💬</div>
+                                <blockquote>
+                                    "The cybersecurity solutions provided by CyberTech have given us 
+                                    complete peace of mind. Their zero-trust architecture implementation 
+                                    has protected our sensitive data and improved our compliance scores 
+                                    significantly."
+                                </blockquote>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">👩‍💼</div>
+                                    <div class="author-info">
+                                        <h4>Sarah Rodriguez</h4>
+                                        <p>CTO, SecureBank Corp</p>
+                                        <div class="rating">
+                                            <span>⭐⭐⭐⭐⭐</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide" data-slide="3">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">💬</div>
+                                <blockquote>
+                                    "Working with CyberTech on our blockchain project was incredible. 
+                                    They delivered a robust DeFi platform that handles millions in 
+                                    transactions daily. Their expertise in smart contracts and security 
+                                    audits is world-class."
+                                </blockquote>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">👨‍💻</div>
+                                    <div class="author-info">
+                                        <h4>Alex Thompson</h4>
+                                        <p>Founder, CryptoVentures</p>
+                                        <div class="rating">
+                                            <span>⭐⭐⭐⭐⭐</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Controls -->
+                    <div class="slider-controls">
+                        <button class="slider-btn prev" onclick="changeSlide(-1)">‹</button>
+                        <div class="slider-dots">
+                            <button class="dot active" onclick="currentSlide(1)"></button>
+                            <button class="dot" onclick="currentSlide(2)"></button>
+                            <button class="dot" onclick="currentSlide(3)"></button>
+                        </div>
+                        <button class="slider-btn next" onclick="changeSlide(1)">›</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Testimonials Grid -->
+        <section class="testimonials-grid" id="testimonials-grid">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="terminal-prompt">$></span> Client Stories
+                    </h2>
+                    <p class="section-subtitle">
+                        Success stories from our valued clients
+                    </p>
+                </div>
+
+                <div class="testimonials-cards">
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-header">
+                            <div class="client-info">
+                                <div class="client-avatar">🏢</div>
+                                <div class="client-details">
+                                    <h4>Global Retail Chain</h4>
+                                    <p>E-commerce Platform</p>
+                                </div>
+                            </div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                "The mobile app CyberTech developed for us has revolutionized 
+                                our customer experience. With 100K+ downloads and a 4.8-star 
+                                rating, it's exceeded all our expectations."
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="project-type">Mobile Development</span>
+                            <span class="completion-time">3 months</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-header">
+                            <div class="client-info">
+                                <div class="client-avatar">🏦</div>
+                                <div class="client-details">
+                                    <h4>Financial Services Inc.</h4>
+                                    <p>Security Implementation</p>
+                                </div>
+                            </div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                "CyberTech's security audit identified 15 critical vulnerabilities 
+                                that we weren't aware of. Their comprehensive security dashboard 
+                                now gives us real-time threat monitoring."
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="project-type">Cybersecurity</span>
+                            <span class="completion-time">2 months</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-header">
+                            <div class="client-info">
+                                <div class="client-avatar">🏥</div>
+                                <div class="client-details">
+                                    <h4>HealthTech Innovations</h4>
+                                    <p>AI Healthcare Platform</p>
+                                </div>
+                            </div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                "The AI diagnostic tool developed by CyberTech has improved 
+                                our diagnostic accuracy by 40%. It's been a game-changer 
+                                for our medical practice and patient outcomes."
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="project-type">AI/ML</span>
+                            <span class="completion-time">6 months</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-header">
+                            <div class="client-info">
+                                <div class="client-avatar">🎨</div>
+                                <div class="client-details">
+                                    <h4>Digital Art Collective</h4>
+                                    <p>NFT Marketplace</p>
+                                </div>
+                            </div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                "Our NFT marketplace built by CyberTech has facilitated over 
+                                $2M in transactions. The platform is robust, secure, and 
+                                provides an amazing user experience for artists and collectors."
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="project-type">Blockchain</span>
+                            <span class="completion-time">4 months</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card-header">
+                            <div class="client-info">
+                                <div class="client-avatar">📦</div>
+                                <div class="client-details">
+                                    <h4>Logistics Solutions Ltd.</h4>
+                                    <p>Cloud Migration</p>
+                                </div>
+                            </div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                "CyberTech's cloud migration strategy reduced our operational 
+                                costs by 60% while improving system performance. Their DevOps 
+                                implementation has streamlined our entire development process."
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="project-type">Cloud Solutions</span>
+                            <span class="completion-time">5 months</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card-header">
+                            <div class="client-info">
+                                <div class="client-avatar">🎓</div>
+                                <div class="client-details">
+                                    <h4>EduTech Platform</h4>
+                                    <p>Learning Management System</p>
+                                </div>
+                            </div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                "The learning management system CyberTech built for us supports 
+                                50K+ concurrent users seamlessly. Their scalable architecture 
+                                and intuitive design have made online learning accessible to millions."
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="project-type">Web Platform</span>
+                            <span class="completion-time">8 months</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="testimonial-stats" id="testimonial-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-icon">😊</div>
+                        <div class="stat-number" data-target="98">0</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                        <div class="stat-unit">%</div>
+                    </div>
+
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-icon">🏆</div>
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                        <div class="stat-unit">+</div>
+                    </div>
+
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-icon">⭐</div>
+                        <div class="stat-number" data-target="4.9">0</div>
+                        <div class="stat-label">Average Rating</div>
+                        <div class="stat-unit">/5</div>
+                    </div>
+
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-icon">🤝</div>
+                        <div class="stat-number" data-target="95">0</div>
+                        <div class="stat-label">Client Retention</div>
+                        <div class="stat-unit">%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="testimonials-cta" id="testimonials-cta">
+            <div class="container">
+                <div class="cta-content" data-aos="fade-up">
+                    <h2>Ready to become our next success story?</h2>
+                    <p>Join hundreds of satisfied clients who have transformed their business with our solutions.</p>
+                    <div class="cta-actions">
+                        <a href="contact.html" class="btn btn-primary">
+                            <span>Start Your Project</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="projects.html" class="btn btn-secondary">
+                            <span>View Our Work</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-bracket">[</span>
+                        <span class="logo-text">CyberTech</span>
+                        <span class="logo-bracket">]</span>
+                    </div>
+                    <p class="footer-description">
+                        Innovating the future through cutting-edge technology solutions.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><span>📁</span></a>
+                        <a href="#" aria-label="LinkedIn"><span>💼</span></a>
+                        <a href="#" aria-label="Twitter"><span>🐦</span></a>
+                        <a href="#" aria-label="Discord"><span>💬</span></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#web-dev">Web Development</a></li>
+                        <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+                        <li><a href="services.html#ai">AI Solutions</a></li>
+                        <li><a href="services.html#blockchain">Blockchain</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📧 hello@cybertech.dev</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>📍 San Francisco, CA</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-separator"></div>
+                <p>&copy; 2024 CyberTech Solutions. All rights reserved.</p>
+                <p class="footer-tagline">
+                    <span class="terminal-prompt">$></span> 
+                    Built with ❤️ and ☕ by the CyberTech team
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

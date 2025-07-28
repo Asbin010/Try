@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CyberTech Solutions Services - Web Development, Cybersecurity, AI Solutions, and Blockchain Technology">
+    <meta name="keywords" content="web development, cybersecurity, AI, blockchain, cloud solutions, tech services">
+    <meta name="author" content="CyberTech Solutions">
+    <title>Services | CyberTech Solutions</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn" aria-label="Toggle theme">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">CyberTech</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">home</a>
+                <a href="about.html" class="nav-link">about</a>
+                <a href="services.html" class="nav-link active">services</a>
+                <a href="projects.html" class="nav-link">projects</a>
+                <a href="testimonials.html" class="nav-link">testimonials</a>
+                <a href="contact.html" class="nav-link">contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title">
+                        <span class="terminal-prompt">#</span> Our Services
+                    </h1>
+                    <p class="page-subtitle">
+                        Comprehensive technology solutions tailored to your business needs
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview" id="services-overview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="terminal-prompt">$></span> What We Offer
+                    </h2>
+                    <p class="section-subtitle">
+                        From concept to deployment, we provide end-to-end technology solutions
+                    </p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" id="web-dev" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <span class="icon">🌐</span>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p class="service-description">
+                            Modern, responsive web applications built with cutting-edge technologies
+                        </p>
+                        <ul class="service-features">
+                            <li>React, Vue.js, Angular applications</li>
+                            <li>Node.js, Python, Go backends</li>
+                            <li>Progressive Web Apps (PWA)</li>
+                            <li>API development & integration</li>
+                            <li>Performance optimization</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <a href="contact.html" class="service-cta">
+                            <span>Get Started</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    
+                    <div class="service-card" id="cybersecurity" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <span class="icon">🔒</span>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <p class="service-description">
+                            Enterprise-grade security solutions to protect your digital assets
+                        </p>
+                        <ul class="service-features">
+                            <li>Security audits & penetration testing</li>
+                            <li>Zero-trust architecture implementation</li>
+                            <li>Compliance & risk management</li>
+                            <li>Incident response & monitoring</li>
+                            <li>Security training & awareness</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-tag">Penetration Testing</span>
+                            <span class="tech-tag">SIEM</span>
+                            <span class="tech-tag">Zero Trust</span>
+                            <span class="tech-tag">SOC</span>
+                        </div>
+                        <a href="contact.html" class="service-cta">
+                            <span>Secure Now</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    
+                    <div class="service-card" id="ai" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon">
+                            <span class="icon">🤖</span>
+                        </div>
+                        <h3>AI & Machine Learning</h3>
+                        <p class="service-description">
+                            Intelligent automation and data-driven solutions for business growth
+                        </p>
+                        <ul class="service-features">
+                            <li>Custom AI model development</li>
+                            <li>Natural language processing</li>
+                            <li>Computer vision solutions</li>
+                            <li>Predictive analytics</li>
+                            <li>Chatbots & virtual assistants</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">MLOps</span>
+                        </div>
+                        <a href="contact.html" class="service-cta">
+                            <span>Innovate</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    
+                    <div class="service-card" id="blockchain" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon">
+                            <span class="icon">⛓️</span>
+                        </div>
+                        <h3>Blockchain Solutions</h3>
+                        <p class="service-description">
+                            Decentralized applications and smart contracts for the future
+                        </p>
+                        <ul class="service-features">
+                            <li>Smart contract development</li>
+                            <li>DeFi application creation</li>
+                            <li>NFT marketplace development</li>
+                            <li>Cryptocurrency integration</li>
+                            <li>Blockchain consulting</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-tag">Solidity</span>
+                            <span class="tech-tag">Ethereum</span>
+                            <span class="tech-tag">Web3</span>
+                            <span class="tech-tag">IPFS</span>
+                        </div>
+                        <a href="contact.html" class="service-cta">
+                            <span>Build Future</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    
+                    <div class="service-card" id="cloud" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-icon">
+                            <span class="icon">☁️</span>
+                        </div>
+                        <h3>Cloud Solutions</h3>
+                        <p class="service-description">
+                            Scalable cloud infrastructure and DevOps automation
+                        </p>
+                        <ul class="service-features">
+                            <li>Cloud migration & optimization</li>
+                            <li>DevOps & CI/CD pipelines</li>
+                            <li>Microservices architecture</li>
+                            <li>Container orchestration</li>
+                            <li>Infrastructure as Code</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Terraform</span>
+                        </div>
+                        <a href="contact.html" class="service-cta">
+                            <span>Scale Up</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    
+                    <div class="service-card" id="mobile" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service-icon">
+                            <span class="icon">📱</span>
+                        </div>
+                        <h3>Mobile Development</h3>
+                        <p class="service-description">
+                            Native and cross-platform mobile applications
+                        </p>
+                        <ul class="service-features">
+                            <li>iOS & Android native apps</li>
+                            <li>React Native & Flutter</li>
+                            <li>App Store optimization</li>
+                            <li>Mobile UI/UX design</li>
+                            <li>App maintenance & updates</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Swift</span>
+                            <span class="tech-tag">Kotlin</span>
+                        </div>
+                        <a href="contact.html" class="service-cta">
+                            <span>Go Mobile</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process" id="process">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="terminal-prompt">#</span> Our Process
+                    </h2>
+                    <p class="section-subtitle">
+                        How we turn your ideas into reality
+                    </p>
+                </div>
+                
+                <div class="process-grid">
+                    <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Discovery & Planning</h3>
+                            <p>We analyze your requirements, define project scope, and create a detailed roadmap for success.</p>
+                            <div class="step-details">
+                                <span>Requirements analysis</span>
+                                <span>Technical architecture</span>
+                                <span>Project timeline</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-left" data-aos-delay="200">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Design & Prototyping</h3>
+                            <p>Creating user-centered designs and interactive prototypes to validate concepts before development.</p>
+                            <div class="step-details">
+                                <span>UI/UX design</span>
+                                <span>Interactive prototypes</span>
+                                <span>User testing</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-right" data-aos-delay="300">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Development & Testing</h3>
+                            <p>Agile development with continuous integration, automated testing, and regular client feedback.</p>
+                            <div class="step-details">
+                                <span>Agile methodology</span>
+                                <span>Code reviews</span>
+                                <span>Automated testing</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-left" data-aos-delay="400">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Deployment & Support</h3>
+                            <p>Seamless deployment to production with ongoing monitoring, maintenance, and support.</p>
+                            <div class="step-details">
+                                <span>Production deployment</span>
+                                <span>Performance monitoring</span>
+                                <span>24/7 support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="services-cta" id="services-cta">
+            <div class="container">
+                <div class="cta-content" data-aos="fade-up">
+                    <div class="cta-text">
+                        <h2>Ready to transform your business?</h2>
+                        <p>Let's discuss how our technology solutions can help you achieve your goals.</p>
+                    </div>
+                    <div class="cta-actions">
+                        <a href="contact.html" class="btn btn-primary">
+                            <span>Start Your Project</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="projects.html" class="btn btn-secondary">
+                            <span>View Our Work</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-bracket">[</span>
+                        <span class="logo-text">CyberTech</span>
+                        <span class="logo-bracket">]</span>
+                    </div>
+                    <p class="footer-description">
+                        Innovating the future through cutting-edge technology solutions.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><span>📁</span></a>
+                        <a href="#" aria-label="LinkedIn"><span>💼</span></a>
+                        <a href="#" aria-label="Twitter"><span>🐦</span></a>
+                        <a href="#" aria-label="Discord"><span>💬</span></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#web-dev">Web Development</a></li>
+                        <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+                        <li><a href="services.html#ai">AI Solutions</a></li>
+                        <li><a href="services.html#blockchain">Blockchain</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📧 hello@cybertech.dev</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>📍 San Francisco, CA</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-separator"></div>
+                <p>&copy; 2024 CyberTech Solutions. All rights reserved.</p>
+                <p class="footer-tagline">
+                    <span class="terminal-prompt">$></span> 
+                    Built with ❤️ and ☕ by the CyberTech team
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
